@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,900;1,900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Thai", ui-sans-serif, system-ui;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-bu-black: #0f172a;
+  --color-bu-gold: #D4AF37;
+  --color-bu-gold-hover: #b8912e;
+}
+
+body {
+  @apply bg-white text-slate-900 font-sans;
+}
+
+.academic-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.gold-shimmer {
+  background: linear-gradient(135deg, #D4AF37 0%, #f59e0b 50%, #D4AF37 100%);
+  background-size: 200% 200%;
+}
